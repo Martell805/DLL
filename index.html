@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="/images/logo.png">
-        <title>Электронная библиотека</title>
+        <title>DLL</title>
 
         <link rel="stylesheet" href="styles/style.css">
 
@@ -16,8 +16,10 @@
         <script>
             $(function(){
                 $("#header").load("templates/header.html");
+                $("#footer").load("templates/footer.html");
             });
         </script>
+
     </head>
 
     <body>
@@ -29,45 +31,17 @@
                     <h2 id="recommended"><i>Рекомендуемые вам:</i></h2>
                     <dl>
                         <dt><b><cite>Рекомендуемая книга 1</cite></b></dt>
-                        <dd>Интересная книга, вам понравится<i>(похожа на вашу любимую)</i></dd>
+                        <dd>Интересная книга, вам понравится</dd>
 
                         <dt><b><cite>Рекомендуемая книга 2</cite></b></dt>
                         <dd>Тоже интересная книга</dd>
 
-                        <del>
-                            <dt><b><cite>Рекомендуемая книга 4</cite></b></dt>
-                            <dd>Уже прочитана вами</dd>
-                        </del>
+                        <dt><b><cite>Рекомендуемая книга 4</cite></b></dt>
+                        <dd>Уже прочитана вами</dd>
 
                         <dt><b><cite>Рекомендуемая книга 5</cite></b></dt>
-                        <dd><u><em>Наверное</em> понравится</u></dd>
+                        <dd>Наверное понравится</dd>
                     </dl>
-                </aside>
-
-                <aside>
-                    <p><a href="https://www.google.com/" target="_blank">Здесь можно найти все книги!</a></p>
-                    <img src = "/images/google.jpg" usemap = "#google_image" alt = "Выбор ссылки без выбора" width="200">
-                    <map name = "google_image">
-                        <area shape="rect" coords="0,0,125,125" href="https://www.google.com/" alt="Ссылка на гугл">
-                        <area shape="circle" coords="150,72,25" href="https://www.google.com/" alt="Вторая ссылка на гугл">
-                        <area shape="poly" coords="175,0,175,125,250,72" href="https://www.google.com/" alt="Третья ссылка на гугл">
-                    </map>
-                </aside>
-
-                <aside>
-                    <h2>Хранилище книг</h2>
-
-                    <div class="stable-row">
-                        <div class="interactive-img">
-                            <img src="images/books.jpg" alt="Стопка книг">
-                            <div class="interactive-img-content">Первая стопка книг</div>
-                        </div>
-
-                        <div class="interactive-img">
-                            <img src="images/books.jpg" alt="Стопка книг">
-                            <div class="interactive-img-content">Вторая стопка книг</div>
-                        </div>
-                    </div>
                 </aside>
             </div>
 
@@ -118,62 +92,7 @@
                 </article>
             </section>
 
-            <section>
-                <h2 id="gallery"><i>Галерея:</i></h2>
-                <div class="gallery">
-                    <img src="images/books.jpg" alt="books">
-                    <img src="images/google.jpg" alt="google">
-                    <img src="images/logo.png" alt="logo">
-                    <img src="images/books.jpg" alt="books">
-                    <img src="images/google.jpg" alt="google">
-                    <img src="images/logo.png" alt="logo">
-                    <img src="images/books.jpg" alt="books">
-                    <img src="images/google.jpg" alt="google">
-                    <img src="images/logo.png" alt="logo">
-                </div>
-            </section>
-
-            <footer>
-                <div class="footer-div">
-                    <h3>О нас:</h3>
-                    <p>
-                        *много плюсов библиотеки*
-                        *много плюсов библиотеки*
-                        *много плюсов библиотеки*
-                        *много плюсов библиотеки*
-                        *много плюсов библиотеки*
-                        *много плюсов библиотеки*
-                    </p>
-                </div>
-
-                <div class="footer-div">
-                    <h3>Контакты:</h3>
-                    <a href="tel:01234567890" class="button old-social">Позвонить в тех поддержку</a>
-                    <a href="mailto:fakemail@gmail.com" class="button old-social">Написать письмо в тех поддержку</a>
-                </div>
-
-                <div class="footer-div">
-                    <h3>Соцсети:</h3>
-                    <div class="stable-row">
-                        <a href="https://vk.com" class="button button1 new-social">
-                            <img src="images/VK.png" width="50px" height="50px">
-                        </a>
-                        <a href="https://telegram.org" class="button button1 new-social">
-                            <img src="images/TG.png" width="50px" height="50px">
-                        </a>
-                        <a href="https://www.youtube.com" class="button button1 new-social">
-                            <img src="images/YT.png" width="50px" height="50px">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer-div">
-                    <h3>Четвёртая колонка:</h3>
-                    <p>
-                        Здесь просто, чтобы была и весь футер красиво складывался при уменьшении ширины экрана
-                    </p>
-                </div>
-            </footer>
+            <div id="footer"></div>
         </main>
 
     </body>

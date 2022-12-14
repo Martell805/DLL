@@ -1,5 +1,3 @@
-"use strict"
-
 function generateString() {
     let abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let rs = "";
@@ -23,17 +21,14 @@ let submit_capcha_button = document.getElementById('submit-capcha');
 let answer = generateString();
 capcha_question.textContent = 'Введите строку "' + answer + '"';
 
-let successful_capcha = false;
 let attempts = 0;
 
 submit_capcha_button.onclick = function () {
-    event.preventDefault();
-
     if(attempts === 0) {
         if(capcha_answer.value === answer) {
             capcha.style.display = 'none';
             register_form.style.display = 'block';
-            return;
+            return false;
         }
 
         let n1 = Math.floor(Math.random() * 100);
@@ -43,17 +38,19 @@ submit_capcha_button.onclick = function () {
         answer = n1 + n2 + "";
         capcha_answer.value = "";
         attempts = 1;
-        return;
+        return false;
     }
 
     if(capcha_answer.value === answer) {
         capcha.style.display = 'none';
         register_form.style.display = 'block';
-        return;
+        return false;
     }
 
     capcha_question.textContent = "Вы робот!";
     capcha_answer.disabled = true;
     submit_capcha_button.disabled = true;
     submit_capcha_button.classList = null;
+
+    return false;
 }

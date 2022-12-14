@@ -1,10 +1,12 @@
 .gallery {
-    width: 70%;
+    width: 60%;
+    background-color: rgba(60, 60, 60);
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .main-img {
     width: 100%;
-    min-height: 400px;
 
     display: flex;
     justify-content: center;
@@ -24,4 +26,38 @@
     box-sizing: border-box;
     border: 5px solid rgb(80, 80, 80);
     border-radius: 5px;
+}
+
+.description {
+    float: right;
+    width: 35%;
+}
+
+.big-img {
+    height: 300px;
+}
+
+.small-img {
+    height: 60px;
+}
+
+@media (orientation: portrait) {
+    .description {
+        float: none;
+        width: 100%;
+    }
+
+    .gallery {
+        width: 100%;
+    }
+
+    @media (max-width: 550px){
+        .big-img {
+            height: 200px;
+        }
+
+        .small-img {
+            height: 60px;
+        }
+    }
 }

@@ -7,19 +7,11 @@ preview_row.onclick = function (event) {
     if (event.target.nodeName === "IMG") {
         main_img.src = event.target.src;
 
-        if(!event.ctrlKey) {
-            for (let img of small_img) {
-                img.classList.remove("selected-img");
-            }
-
-            event.target.classList.add("selected-img");
-        } else {
-            if(event.target.classList.contains("selected-img")) {
-                event.target.classList.remove("selected-img");
-            } else {
-                event.target.classList.add("selected-img");
-            }
+        for (let img of small_img) {
+            img.classList.remove("selected-img");
         }
+
+        event.target.classList.add("selected-img");
 
         return false;
     }
