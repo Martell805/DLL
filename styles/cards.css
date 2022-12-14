@@ -1,50 +1,20 @@
 .card {
-    margin: auto;
     position: relative;
-    width: 18%;
-    height: 350px;
     border-radius: 20px;
+    height: auto;
     padding: 20px;
     background: linear-gradient(0deg, rgb(0, 0, 0), #BBBBBB);
-    overflow: hidden;
-    z-index: 0;
     text-align: center;
 
     transition: transform 0.5s;
-}
 
-.card-blur {
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    width: calc(100% + 10px);
-    height: calc(100% + 20px);
-    border-radius: 0 15px 15px 0;
-
-    z-index: -7;
+    flex-basis: 25%;
+    max-width: 70%;
 }
 
 .card:hover {
     z-index: 8;
-    transform: scale(1.1)
-}
-
-.card:hover ~ .card-blur {
-    animation: 0.7s blur-card-background forwards;
-}
-
-@keyframes blur-card-background {
-    from {
-        backdrop-filter: blur(0px);
-        z-index: -7;
-    }
-    20% {
-        z-index: 7;
-    }
-    to {
-        backdrop-filter: blur(5px);
-        z-index: 7;
-    }
+    transform: scale(1.1);
 }
 
 .underlined-card::after{
@@ -65,17 +35,21 @@
 
 .card-blackout {
     position: absolute;
-    top: -5px;
-    left: -5px;
-    width: calc(100% + 10px);
-    height: calc(100% + 20px);
-    border-radius: 0 15px 15px 0;
+    top: -20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 60px);
+    border-radius: 20px;
 
     z-index: -7;
 }
 
 .card:hover ~ .card-blackout {
     animation: 0.7s blackout-card-background forwards;
+}
+
+.card a {
+    text-decoration: none;
 }
 
 @keyframes blackout-card-background {
