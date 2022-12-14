@@ -15,7 +15,7 @@ header {
 }
 
 body {
-    margin-top: 250px;
+    margin-top: 150px;
     font-family: "Open Sans", sans-serif;
     background-color: black;
     color: white;
@@ -27,6 +27,11 @@ body {
 h1 {
     text-align: center;
     font-family: "El Messiri", sans-serif;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
 }
 
 .aside {
@@ -157,6 +162,9 @@ address a:visited{
     margin-bottom: 10px;
 }
 
+a {
+    color: white;
+}
 
 @media (orientation: portrait) {
     section {
@@ -183,7 +191,7 @@ address a:visited{
     }
 
     body {
-        margin-top: 150px;
+        margin-top: 75px;
         display: flex;
         align-items: stretch;
         gap: 10px;
@@ -191,6 +199,7 @@ address a:visited{
 
     .fullscreen-section {
         width: 90%;
+        text-align: center;
     }
 
     .row {

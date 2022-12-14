@@ -28,10 +28,6 @@
     border-radius: 5px;
 }
 
-.description {
-    float: right;
-    width: 35%;
-}
 
 .big-img {
     height: 300px;
@@ -42,11 +38,6 @@
 }
 
 @media (orientation: portrait) {
-    .description {
-        float: none;
-        width: 100%;
-    }
-
     .gallery {
         width: 100%;
     }
@@ -54,6 +45,8 @@
     @media (max-width: 550px){
         .big-img {
             height: 200px;
+            margin-right: auto;
+            margin-left: auto;
         }
 
         .small-img {
