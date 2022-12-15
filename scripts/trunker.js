@@ -6,6 +6,6 @@ export function truncate_cards() {
             continue;
         }
 
-        card_info.innerText = card_info.innerText.substr(0, 97) + '...';
+        card_info.innerText = card_info.innerText.substr(0, 197) + '...';
     }
 }
