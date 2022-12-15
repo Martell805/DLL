@@ -1,10 +1,4 @@
 export const books = {
-    "0": {
-        "name": "NAME",
-        "author_id": "0",
-        "description": "DESC",
-        "img": ["images/books2.jpg", "images/books3.jpg", "images/books4.jpg"]
-    },
     "1": {
         "name": "Евгений Онегин",
         "author_id": "1",
@@ -44,12 +38,6 @@ export const books = {
 };
 
 export const authors = {
-    "0": {
-        "name": "NAME",
-        "description": "DESC",
-        "books": ["0"],
-        "portrait": "images/ava.png"
-    },
     "1": {
         "name": "Пушкин А.С.",
         "description": "Один из самых авторитетных литературных деятелей первой трети XIX века. Ещё при жизни Пушкина сложилась его репутация величайшего национального русского поэта. Пушкин рассматривается как основоположник современного русского литературного языка.",
