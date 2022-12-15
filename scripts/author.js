@@ -16,7 +16,7 @@ description.innerHTML = "<p>" + authors[id].description + "</p>";
 description.innerHTML += "Книги: <ul>";
 
 for(let book_id of authors[id].books) {
-    description.innerHTML += "<li><i><a href='book.html?id=" + book_id +  "'>" + books[book_id].name + "</a></i></li>"
+    description.innerHTML += "<li><i><a href='book.html?id=" + book_id +  "'>" + books[book_id].name + "</a></i></li>";
 }
 
 description.innerHTML += "</ul>";
