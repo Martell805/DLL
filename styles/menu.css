@@ -17,6 +17,11 @@
     display: inline-block;
     padding: 10px;
     margin: 5px 30px;
+    transition: background-color 0.5s;
+}
+
+.menu__box li:hover {
+    background-color: rgb(200, 200, 200) ;
 }
 
 .menu__box .menu__item {
