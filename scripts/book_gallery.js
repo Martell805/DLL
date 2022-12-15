@@ -17,7 +17,7 @@ for(let id in books) {
     book_author.href = "author.html?id=" + books[id].author_id;
 
     let book_img = document.createElement("img");
-    book_img.style.height = "50px";
+    book_img.style.height = "100px";
     book_img.style.display = "inline-block";
     book_img.src = books[id].img[0];
 
